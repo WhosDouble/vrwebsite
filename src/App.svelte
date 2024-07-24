@@ -1,11 +1,22 @@
 <script>
   import Header from "./lib/header.svelte";
   import Footer from "./lib/footer.svelte";
+  import Section1 from "./lib/section1.svelte";
+
+
 </script>
 
-<main>
+<body>
   <Header/>
+    <main>
+      <Section1/>
+    </main>
+    <Footer/>
+</body>
 
-  <Footer/>
-</main>
+<style>
+  body{
+    overflow-y: hidden;
+  }
+</style>
 

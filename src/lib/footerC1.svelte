@@ -59,4 +59,7 @@
         width: 400px;
         padding: 7px;
     }
+    div{
+        overflow-y: hidden;
+    }
 </style>
