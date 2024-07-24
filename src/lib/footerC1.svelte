@@ -50,6 +50,9 @@
         </div>
     </div>
 </div>
+<div class="bg-black pt-0 p-24">
+    <p class="text-white text-[13px]">2024 title. All rights reserved made by @SirRango</p>
+</div>
 
 <style>
     input{
