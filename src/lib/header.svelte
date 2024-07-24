@@ -5,8 +5,8 @@
 <header>
     <nav class="flex items-center fixed justify-center gap-7 w-full h-14 border">
         <img src="" alt="the Logo for the website" loading="lazy">
-        <a class="" href="">Home</a>
+        <a class="" href="header.svelte">Home</a>
         <h3>Test</h3>
-        <a class="m-a" href="">Contact Us</a>
+        <a class="m-a" href="footer.svelte">Contact Us</a>
     </nav>
 </header>
