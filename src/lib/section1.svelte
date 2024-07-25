@@ -1,50 +1,45 @@
 <script>
     import Button from "../shared/button.svelte";
-    import Card from "../shared/card.svelte";
-    import Card2 from "../shared/card2.svelte";
-    import Card3 from "../shared/card3.svelte";
-    import Card4 from "../shared/card4.svelte";
 </script>
 
-    <div class="flex flex-col justify-center items-center">
-        <div class="flex flex-col z-40 text-center justify-center w-full">
+    <div class="flex p-20 w-full gap-10 justify-center items-center" id="container">
+        <div class="flex flex-col text-left  w-[600px]" id="div1">
             <h1 class="text-[50px] text-[#000]">A new era for</h1> 
             <h1 class="text-[50px]">Virtual <span class="text-orange-600">Reality</span></h1>
-            <p class="text-[15px]">we are changing the future of VR</p>
-            <p class="text-[15px]">using new technologies</p>
+            <div class="w-full max-w-[600px]">
+                <p class="text-[15px]">We are revolutionizing the future of virtual reality. By pushing the boundaries of technology and creativity, we aim to create immersive, interactive experiences that transform how people connect, learn, and explore.</p>
+                <div class="flex">
+                    <Button>learn More</Button>
+                    <Button inverse=true>test</Button>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center">
-            <Button>New Stuff</Button>
+        <div>
+            <div class="flex w-[500px] h-[300px] rounded-lg bg-black" id="block">
+
+            </div>
         </div>
-        <div class="main-card absolute">
-            <h1>test</h1>
-        </div>
-        <Card></Card>
-        <Card2></Card2>
-        <Card3></Card3>
-        <Card4></Card4>
     </div>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        h1{
-            font-family: Poppins, sans-serif;
-            font-weight: bold;
-            letter-spacing: 2px;
+        @media (max-width:850px) {
+            #container{
+                flex-direction: column;
+            }
+            #div1{
+                width: 500px;
+            }
         }
-        p{
-            font-weight: bold;
-            color: gray;
-        }
-        .main-card{
-            position: relative;
-            width: 100%;
-            height: 100%;
-            min-height: 600px;
-            max-width: 1000px;
-            background: #000;
-            margin: 20px;
-            margin-top: 40px;
-            border-radius: 10px;
+        @media (max-width: 430px) {
+            #block{
+                width: 400px;
+            }
+            #container{
+                flex-direction: column;
+            }
+            #div1{
+                width: 400px;
+            }
         }
     </style>

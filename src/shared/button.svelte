@@ -2,9 +2,10 @@
     export let type = 'primary'
     export let bigify = false
     export let flat = false
+    export let inverse = false
 </script>
 
-<button class="{type}" class:bigify={bigify} class:flat={flat}>
+<button class="{type}" class:bigify={bigify} class:flat={flat} class:inverse={inverse}>
    <slot></slot>
 </button>
 
@@ -17,6 +18,11 @@
         padding: 7px;
         font-weight: bold;
         box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+    }
+    .inverse{
+        background: transparent;
+        border: 2px solid #000;
+        
     }
     .primary{
         background: #000;
