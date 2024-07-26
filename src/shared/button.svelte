@@ -14,7 +14,7 @@
         border: 0;
         margin: 5px;
         border-radius: 5px;
-        width: 100px;
+        width: 130px;
         padding: 7px;
         font-weight: bold;
         box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
@@ -29,7 +29,7 @@
         color: #eee;
     }
     .secondary{
-        background: #673ab1;
+        background: #93B1A6;
         color: #eee;
     }
     .bigify{
